@@ -1,3 +1,15 @@
+#Introduction
+
+This website is called "Developer's Best Friend", it's a website that has a random user generator and a lorem Ipsum random text generator.
+
+##Sources/Packages
+
+I have used two package from the website packagist, fzaninotto/faker and samuelwilliams/LoremIpsum from github.
+
+##Live URL
+
+<http://ajamjoom-p3.gopagoda.com/>
+
 ## Laravel PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
@@ -23,3 +35,4 @@ Documentation for the entire framework can be found on the [Laravel website](htt
 ### License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+

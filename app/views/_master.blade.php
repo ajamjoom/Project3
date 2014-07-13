@@ -6,7 +6,7 @@
 	<title>@yield('title','Developers Best Friend')</title>
 
 	
-	<link rel="stylesheet" href="style.css" type="text/css">
+	<link rel="stylesheet" href="views/style.css" type="text/css">
 
 	@yield('head')
 

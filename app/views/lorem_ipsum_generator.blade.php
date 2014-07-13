@@ -8,20 +8,25 @@
 
  		 <a class='home' href = '/'> <-home</a>
  		<h1>Lorem Ipsum Generator</h1>
- 		<p>How many paragraphs do you want?</p>
+ 		<p class='lorem_Q'>How many paragraphs do you want?</p>
  		
-<form action='lorem_ipsum_generator.blade.php' method='POST'>
+<dev class='form'>
 
- 	<p>
- 		<label for='number_of_parag'>Number of Paragraphs:</label>
+{{ Form::open(array('url' => '/lorem_ipsum_generator', 'method' => 'POST')) }}
+	
+	{{ Form::label('num_of_parag', 'Number of Paragraphs:', array('id' => 'num_of_parag')) }}
+	{{ Form::text('num_of_parag', '1') }}
+	{{ Form::submit('Generate!') }}
 
- 		<input type='text' name='number_of_parag'  pattern="[0-9]" id='number_of-parag' > 
-				
-	</p>
+{{ Form::close() }}
 
-	<input type='submit' value='Generate!'>		
+</dev>
 
-</form>
-
-
+<?php
+if(isset($_POST["num_of_parag"])) {
+$generator = new Badcow\LoremIpsum\Generator();
+$paragraphs = $generator->getParagraphs($_POST["num_of_parag"]);
+echo implode("<p class='paragraphs'>", $paragraphs);
+}
+?>
  		@stop

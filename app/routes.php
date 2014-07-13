@@ -20,8 +20,17 @@ Route::get('/lorem_ipsum_generator', function()
 {
 	return View::make('lorem_ipsum_generator');
 });
+Route::post('/lorem_ipsum_generator', function()
+{
+	return View::make('lorem_ipsum_generator');
+});
 
 Route::get('/user_generator', function()
+{
+	return View::make('user_generator');
+});
+
+Route::post('/user_generator', function()
 {
 	return View::make('user_generator');
 });

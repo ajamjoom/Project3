@@ -1,0 +1,39 @@
+h1{
+	text-align: center;
+}
+img{
+ 	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 65%;
+    height: auto;
+    width: auto;
+    padding-top: 30px;
+
+}	
+form{
+	text-align: center;
+	line-height:1.6em;
+
+}
+.password{
+	font-weight:700;
+	text-align: center;
+	border-width: 1px;
+	background-color: #E8E8E8  ;
+	padding: 10px;
+	color: #FF9933;
+	font-family:consolas, courier;
+	font-size: 150%;
+	display:inline-block;
+}
+.description{
+	text-align: center;
+}
+body{
+	font-family: Comic Sans, Comic Sans MS, cursive;
+	color: #666666;
+	margin-left: 10%;
+	margin-right: 10%;
+	font-size: small;
+}

@@ -17,13 +17,13 @@
 	{{ Form::text('number_of_users', '1') }}
 	<br>
 	{{ Form::label('add_birthday', 'Include birthday') }}
-	{{ Form::checkbox('add_birthday', '1', true) }}
+	{{ Form::checkbox('add_birthday', '1', false) }}
 	<br>
 	{{ Form::label('add_address', 'Include address') }}
-	{{ Form::checkbox('add_address', '1', true) }}
+	{{ Form::checkbox('add_address', '1', false) }}
 	<br>
 	{{ Form::label('add_profile', 'Include profile') }}
-	{{ Form::checkbox('add_profile', '1', true) }}
+	{{ Form::checkbox('add_profile', '1', false) }}
 	<br>
 	
 	{{ Form::submit('Generate!') }}

@@ -28,6 +28,15 @@
 
 		</p>	
  		
- 		<a href = '/user_generator'> Generate Random Users</a> 
+ 		<a href = '/user_generator'> Generate Random Users</a> <br>
+ 		
+ 		<h2> xkcd Pssword Generator</h2>
+ 		
+ 		<p>
+ 			Generate Password that are easy to remember but hard to break!!!
+ 		</p>
+ 		
+ 		<a href = '/password_generator'> xkcd Pssword Generator</a> 
+
 
  @stop

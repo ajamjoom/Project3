@@ -13,7 +13,7 @@
 
 <h1>xkcd Password Generator</h1>
 
-<center><div class = "password"><?php echo $password ?></div></center>
+<div class = "password"><?php echo $password ?></div>
 	
 	{{ Form::open(array('url' => '/password_generator', 'method' => 'POST')) }}
 	

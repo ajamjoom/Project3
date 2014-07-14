@@ -41,6 +41,6 @@
 
 <p class = "description"> Create passwords that are easy to remember but freakin hard to break!!!</p>
 
-<a href='/'><img class='logo' src='<?php echo URL::asset('/images/password_strength.png'); ?>' alt='Foobooks Logo'></a>
+<a href='/'><img src='<?php echo URL::asset('/images/password_strength.png'); ?>' alt='explaining what xkcd passwords are'></a>
  
   @stop

@@ -5,6 +5,7 @@ This website is called "Developer's Best Friend", it's a website that has a rand
 ##Sources/Packages
 
 I have used two package from the website packagist, fzaninotto/faker and samuelwilliams/LoremIpsum from github.
+I have incorporated my xkcd password generator in this website
 
 ##Live URL
 

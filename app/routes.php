@@ -29,11 +29,11 @@ Route::get('/user_generator', function()
 {
 	return View::make('user_generator');
 });
-
 Route::post('/user_generator', function()
 {
 	return View::make('user_generator');
 });
+
 Route::get('/password_generator', function()
 {
 	return View::make('password_generator');

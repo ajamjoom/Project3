@@ -21,12 +21,16 @@
 {{ Form::close() }}
 
 </dev>
+
 <br>
+
 <?php
+
 if(isset($_POST["num_of_parag"])) {
 $generator = new Badcow\LoremIpsum\Generator();
 $paragraphs = $generator->getParagraphs($_POST["num_of_parag"]);
 echo implode("<p>", $paragraphs);
 }
+
 ?>
  		@stop

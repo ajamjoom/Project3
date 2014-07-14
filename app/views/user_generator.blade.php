@@ -42,7 +42,7 @@ if(isset($_POST["number_of_users"])) {
 	for ($i=0; $i < $_POST["number_of_users"]; $i++) { 
 		
 		echo "<br />";
-		echo "<img src = 'http://lorempixel.com/400/200/business' alt='users personal photo' width = '200' height = '100' >";
+		echo "<img src = '/images/".rand(1, 6).".jpg' alt='users personal photo' width = '150' height = '150' >";
  		echo "<br />";
 		echo "<h4>".$faker->name."</h4>";
 

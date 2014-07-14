@@ -30,7 +30,7 @@
  		
  		<a href = '/user_generator'> Generate Random Users</a> <br>
  		
- 		<h2> xkcd Pssword Generator</h2>
+ 		<h2> xkcd Password Generator</h2>
  		
  		<p>
  			Generate Password that are easy to remember but hard to break!!!

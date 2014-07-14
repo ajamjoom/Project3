@@ -34,7 +34,6 @@
 </dev>
 
 <?php 
-print_r($_POST);
 $faker = Faker\Factory::create();
 
 if(isset($_POST["number_of_users"])) {

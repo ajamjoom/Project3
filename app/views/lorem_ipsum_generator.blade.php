@@ -6,11 +6,10 @@
 
  @section('content')
 
- 		 <a class='home' href = '/'> <-home</a>
+ 		 <a class='home' href = '/'>Home</a>
  		<h1>Lorem Ipsum Generator</h1>
  		<p class='lorem_Q'>How many paragraphs do you want?</p>
  		
-<dev class='form'>
 
 {{ Form::open(array('url' => '/lorem_ipsum_generator', 'method' => 'POST')) }}
 	
@@ -20,7 +19,6 @@
 
 {{ Form::close() }}
 
-</dev>
 
 <br>
 

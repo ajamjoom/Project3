@@ -9,7 +9,7 @@
 
  @section('content')
  
- <a class='home' href = '/'> <-home</a>
+ <a class='home' href = '/'>Home</a>
 
 <h1>xkcd Password Generator</h1>
 

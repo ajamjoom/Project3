@@ -10,6 +10,7 @@
 
  		<h1>Random User Generator</h1>
 
+
 <dev class='form'>
 	{{ Form::open(array('url' => '/user_generator', 'method' => 'POST')) }}
 	
@@ -17,13 +18,13 @@
 	{{ Form::text('number_of_users', '1') }}
 	<br>
 	{{ Form::label('add_birthday', 'Include birthday') }}
-	{{ Form::checkbox('add_birthday', '1', false) }}
+	{{ Form::checkbox('add_birthday', '1') }}
 	<br>
 	{{ Form::label('add_address', 'Include address') }}
-	{{ Form::checkbox('add_address', '1', false) }}
+	{{ Form::checkbox('add_address', '1') }}
 	<br>
 	{{ Form::label('add_profile', 'Include profile') }}
-	{{ Form::checkbox('add_profile', '1', false) }}
+	{{ Form::checkbox('add_profile', '1') }}
 	<br>
 	
 	{{ Form::submit('Generate!') }}
@@ -33,23 +34,28 @@
 </dev>
 
 <?php 
-
+print_r($_POST);
 $faker = Faker\Factory::create();
 
 if(isset($_POST["number_of_users"])) {
 	
+	
 	for ($i=0; $i < $_POST["number_of_users"]; $i++) { 
 		
+		echo "<br />";
+		echo "<br />";
+
 		echo $faker->name. "<br />";
 
-		if ($_POST["add_birthday"] == true) {
+		if (isset($_POST["add_birthday"])) {
 			echo $faker->dateTimeThisCentury->format('Y-m-d'). "<br />";
 		}
 
-		if ($_POST["add_address"] == true) {
+		if (isset($_POST["add_address"] )) {
 			echo $faker->address. "<br />";
 		}
-		if ($_POST["add_profile"] == true) {
+
+		if (isset($_POST["add_profile"] )) {
 			echo $faker->text;
 		}
 		
@@ -59,5 +65,4 @@ if(isset($_POST["number_of_users"])) {
 
 ?>
 
-
- 		@stop
+ @stop

@@ -13,7 +13,7 @@
 
 {{ Form::open(array('url' => '/lorem_ipsum_generator', 'method' => 'POST')) }}
 	
-	{{ Form::label('num_of_parag', 'Number of Paragraphs:', array('id' => 'num_of_parag')) }}
+	{{ Form::label('num_of_parag', 'Number of Paragraphs:') }}
 	{{ Form::text('num_of_parag', '1') }}
 	{{ Form::submit('Generate!') }}
 

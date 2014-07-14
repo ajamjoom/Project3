@@ -14,7 +14,6 @@
 <h1>xkcd Password Generator</h1>
 
 <center><div class = "password"><?php echo $password ?></div></center>
-<dev class='form'>
 	
 	{{ Form::open(array('url' => '/password_generator', 'method' => 'POST')) }}
 	
@@ -35,9 +34,6 @@
 	
 	{{ Form::close() }}
 	<br>
-</dev>
-
-
 
 <p class = "description"> Create passwords that are easy to remember but freakin hard to break!!!</p>
 

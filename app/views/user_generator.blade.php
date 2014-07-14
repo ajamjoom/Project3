@@ -18,19 +18,19 @@
 	{{ Form::text('number_of_users', '1') }}
 	<br>
 	{{ Form::label('add_birthday', 'Include birthday') }}
-	{{ Form::checkbox('add_birthday', '1') }}
+	{{ Form::checkbox('add_birthday', '1', true) }}
 	<br>
 	{{ Form::label('add_address', 'Include address') }}
-	{{ Form::checkbox('add_address', '1') }}
+	{{ Form::checkbox('add_address', '1', true) }}
 	<br>
 	{{ Form::label('add_profile', 'Include profile') }}
-	{{ Form::checkbox('add_profile', '1') }}
+	{{ Form::checkbox('add_profile', '1', true) }}
 	<br>
 	
 	{{ Form::submit('Generate!') }}
 	
 	{{ Form::close() }}
-	<br>
+	
 </dev>
 
 <?php 
@@ -42,9 +42,10 @@ if(isset($_POST["number_of_users"])) {
 	for ($i=0; $i < $_POST["number_of_users"]; $i++) { 
 		
 		echo "<br />";
-		echo "<br />";
-
-		echo $faker->name. "<br />";
+		
+		echo "<img src='http://lorempixel.com/400/200/business' alt='users personal photo' width= '200' height= '100' >";
+ 		echo "<br />";
+		echo "<h4>".$faker->name."</h4>";
 
 		if (isset($_POST["add_birthday"])) {
 			echo $faker->dateTimeThisCentury->format('Y-m-d'). "<br />";
@@ -58,7 +59,9 @@ if(isset($_POST["number_of_users"])) {
 			echo $faker->text;
 		}
 		
-
+		echo "<br />";
+		echo "<hr />";
+	
 	}
 }
 

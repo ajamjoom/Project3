@@ -15,6 +15,7 @@
 	
 	{{ Form::label('num_of_parag', 'Number of Paragraphs:') }}
 	{{ Form::text('num_of_parag', '1') }}
+	{{ Form::label('num_of_parag', '(Max 99)', array('id' => 'lorem_Max')) }}
 	{{ Form::submit('Generate!') }}
 
 {{ Form::close() }}
@@ -25,9 +26,14 @@
 <?php
 
 if(isset($_POST["num_of_parag"])) {
+if($_POST["num_of_parag"]<=99 && $_POST["num_of_parag"]>=1){
 $generator = new Badcow\LoremIpsum\Generator();
 $paragraphs = $generator->getParagraphs($_POST["num_of_parag"]);
 echo implode("<p>", $paragraphs);
+}
+else{
+	echo "Please enter a number between 1-99";
+}
 }
 
 ?>

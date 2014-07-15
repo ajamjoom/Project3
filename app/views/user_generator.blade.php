@@ -16,6 +16,7 @@
 	
 	{{ Form::label('number_of_users', 'Number of users:', array('id' => 'user_generator')) }}
 	{{ Form::text('number_of_users', '1') }}
+	{{ Form::label('number_of_users', '(Max 99)', array('id' => 'user_max')) }}
 	<br>
 	{{ Form::label('add_photo', 'Include photo') }}
 	{{ Form::checkbox('add_photo', '1', false) }}
@@ -40,7 +41,7 @@ $faker = Faker\Factory::create();
 
 if(isset($_POST["number_of_users"])) {
 	
-	
+	if($_POST["number_of_users"]<=99 && $_POST["number_of_users"]>=1){
 	for ($i=0; $i < $_POST["number_of_users"]; $i++) { 
 		
 		echo "<br />";
@@ -68,6 +69,10 @@ if(isset($_POST["number_of_users"])) {
 		echo "<hr />";
 	
 	}
+}
+else{
+	echo "please enter a number between 1-99";
+}
 }
 
 ?>

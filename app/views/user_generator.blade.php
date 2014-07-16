@@ -5,9 +5,9 @@
  @stop
 
  @section('content')
-
+<br>
  		<a class='home' href = '/'>Home</a>
-
+<br>
  		<h1>Random User Generator</h1>
 
 
@@ -35,46 +35,4 @@
 	
 	{{ Form::close() }}
 	
-
-<?php 
-$faker = Faker\Factory::create();
-
-if(isset($_POST["number_of_users"])) {
-	
-	if($_POST["number_of_users"]<=99 && $_POST["number_of_users"]>=1){
-	for ($i=0; $i < $_POST["number_of_users"]; $i++) { 
-		
-		echo "<br />";
-		
-		if (isset($_POST["add_photo"])) {
-			echo "<img src = '/images/".rand(1, 6).".jpg' alt='users personal photo' width = '150' height = '150' >";
-		}
-
- 		echo "<br />";
-		echo "<h4>".$faker->name."</h4>";
-
-		if (isset($_POST["add_birthday"])) {
-			echo $faker->dateTimeThisCentury->format('Y-m-d'). "<br />";
-		}
-
-		if (isset($_POST["add_address"] )) {
-			echo $faker->address. "<br />";
-		}
-
-		if (isset($_POST["add_profile"] )) {
-			echo $faker->text;
-		}
-		
-		echo "<br />";
-		echo "<hr />";
-	
-	}
-}
-else{
-	echo "please enter a number between 1-99";
-}
-}
-
-?>
-
  @stop

@@ -11,18 +11,6 @@ I have incorporated my xkcd password generator in this website
 
 <http://ajamjoom-p3.gopagoda.com/>
 
-## Where is my code?
-
-app/routes.php -> all routes in my website
-views/_master.blade.php -> master page (parent page) everything is linking to this page
-views/index.blade.php -> homepage 
-views/lorem_ipsum_generator.bladee.php -> lorem ipsum page + lorem ipsum logic
-views/user_generator.blade.php -> user generator page + user generator logic
-views/password_generator.blade.php -> xkcd password generator page
-public/pass_gen_logic.blade.php -> xkcd password generator's logic
-public/pass_style.css -> xkcd password generators css style sheet
-public/style.css -> index page + lorem ipsum page + user generator pages style sheet
-
 ## Laravel PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)

@@ -19,22 +19,14 @@
 	{{ Form::submit('Generate!') }}
 
 {{ Form::close() }}
-
-
 <br>
+<?php 
 
-<?php
+if (isset($data)) {
 
-if(isset($_POST["num_of_parag"])) {
-if($_POST["num_of_parag"]<=99 && $_POST["num_of_parag"]>=1){
-$generator = new Badcow\LoremIpsum\Generator();
-$paragraphs = $generator->getParagraphs($_POST["num_of_parag"]);
-echo implode("<p>", $paragraphs);
-}
-else{
-	echo "Please enter a number between 1-99";
-}
+	echo $data;
 }
 
 ?>
+
  		@stop
